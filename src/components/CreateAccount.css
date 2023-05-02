@@ -1,0 +1,24 @@
+.MainLogin{
+    color:aliceblue;
+    border:1px solid;
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    margin: auto;
+    background-color: rgb(57, 56, 56);
+   
+}
+.Left_Login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.para{
+    margin-right:180px;
+}
+.Left_Login button{
+    margin: auto;
+    margin-left: 10px;
+}
