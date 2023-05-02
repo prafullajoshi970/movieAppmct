@@ -22,3 +22,14 @@
     margin: auto;
     margin-left: 10px;
 }
+.input11{
+    width:300px;
+    height:40px;
+    margin:20px
+}
+.createbtn{
+    position: absolute;
+    left:400px;
+    top:450px;
+    margin:20px
+}

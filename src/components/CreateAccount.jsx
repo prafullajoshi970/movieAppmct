@@ -63,7 +63,7 @@ function CreateAccount() {
         <h3>fill all Details Below to Create Account</h3>
         <form type="submit">
           <lable>Name</lable><br/>
-          <input
+          <input className="input11"
             Placeholder="enter Name"
             name="name"
             onChange={getdata}
@@ -71,6 +71,7 @@ function CreateAccount() {
 
           <lable>Email </lable><br/>
           <input
+          className="input11"
             fullWidth
             label="Email"
             type="email"
@@ -80,13 +81,14 @@ function CreateAccount() {
           ></input><br/>
           <lable>Password</lable><br/>
           <input
+          className="input11"
             type="password"
             Placeholder="enter password"
             name="password"
             onChange={getdata}
           ></input><br/><br/>
 
-          <button  type="submit" onClick={addData} variant="outlined">
+          <button className="createbtn"  type="submit" onClick={addData} variant="outlined">
        
             Submit Details
           </button>
