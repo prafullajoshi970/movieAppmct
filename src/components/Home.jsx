@@ -3,6 +3,7 @@ import axios from 'axios';
 import Button from '@mui/material/Button';
 import{Link} from 'react-router-dom'
 import Trailer from './Trailer';
+import "./Home.css";
 
 
 const API_KEY = 'b1e07746b22a1a95afeb707ea616637c';

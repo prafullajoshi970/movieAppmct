@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CreateAccount.css";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 function CreateAccount() {
   const history = useNavigate(); //if submit form details then we should travel on Login page
@@ -60,33 +62,74 @@ function CreateAccount() {
     <div className="MainLogin">
       <div className="Left_Login">
         <h1>Welcome To Create Account page</h1>
-        <h3>fill all Details Below to Create Account</h3>
+        <h3 style={{color:'gray',marginTop:'0px'}}>fill all Details Below to Create Account</h3>
         <form type="submit">
-          <lable>Name</lable><br/>
-          <input className="input11"
-            Placeholder="enter Name"
-            name="name"
-            onChange={getdata}
-          ></input><br/>
+        <Box
+            sx={{
+              width: 350,
+              maxWidth: "100%",
+            }}
+          >
+   
+            {" "}
+            <TextField
+            style={{marginLeft:'11vh'}}
+            error
+             id="filled-error"
+             label="Name"
+             type={"Email"}
+             className="input"
+             placeholder={"enter Name"}
+             name="Email"
+             onChange={getdata}
+        />
+           
+          </Box><br/>
 
-          <lable>Email </lable><br/>
-          <input
-          className="input11"
-            fullWidth
-            label="Email"
-            type="email"
-            Placeholder="enter email id"
-            name="email"
-            onChange={getdata}
-          ></input><br/>
-          <lable>Password</lable><br/>
-          <input
-          className="input11"
-            type="password"
-            Placeholder="enter password"
-            name="password"
-            onChange={getdata}
-          ></input><br/><br/>
+          <br/>
+          <Box
+            sx={{
+              width: 350,
+              maxWidth: "100%",
+            }}
+          >
+   
+            {" "}
+            <TextField
+            style={{marginLeft:'11vh'}}
+            error
+             id="filled-error"
+             label="Email"
+             type={"Email"}
+             className="input"
+             placeholder={"enter Email-Id"}
+             name="Email"
+             onChange={getdata}
+        />
+           
+          </Box><br/>
+         <br/>
+         <Box
+            sx={{
+              width: 350,
+              maxWidth: "100%",
+            }}
+          >
+   
+            {" "}
+            <TextField
+            style={{marginLeft:'11vh'}}
+            error
+             id="filled-error"
+             label="Password"
+             type={"Email"}
+             className="input"
+             placeholder={"enter PassWord"}
+             name="Email"
+             onChange={getdata}
+        />
+           
+          </Box><br/><br/>
 
           <button className="createbtn"  type="submit" onClick={addData} variant="outlined">
        
@@ -94,7 +137,7 @@ function CreateAccount() {
           </button>
         </form>
         <p className="para">
-          Already Have Account? <Link to={"/"} style={{textDecoration:"none",color:'yellowgreen'}}> SignUp</Link>
+          Already Have Account? <Link to={"/"} style={{textDecoration:"none",color:'red'}}> SignUp</Link>
         </p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
+import './Moviedetail.css'
 const Addtocart = () => {
   const {id}=useParams();
 const [data,setData]=useState({id:0,
@@ -37,6 +38,14 @@ console.log(data)
                   <p>{data.release_date} | {Math.floor(data.runtime/60)}Hrs | {Math.floor(data.vote_average)}+</p>
                    <p>{data.overview}</p>
                   <h3>Related Movies</h3>
+                <div className='relatedMovies'>
+                <img className="imgcard1" style={{width:'100px',height:"100px",margin:'10px',border:'2px solid white'}} src={`https://image.tmdb.org/t/p/w500/hll4O5vSAfnZDb6JbnP06GPtz7b.jpg`} alt=''></img>
+                <img  className="imgcard1" style={{width:'100px',height:"100px",margin:'10px'}} src={`https://image.tmdb.org/t/p/w500/lpxDrACKJhbbGOlwVMNz5YCj6SI.jpg`} alt=''></img>
+                <img  className="imgcard1" style={{width:'100px',height:"100px",margin:'10px'}} src={`https://image.tmdb.org/t/p/w500/eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg`} alt=''></img>
+                </div>
+        
+        
+      
                  
                  </div> 
               </div>
