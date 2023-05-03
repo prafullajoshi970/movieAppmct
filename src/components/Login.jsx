@@ -91,13 +91,11 @@ const Login = () => {
             <TextField
             style={{marginLeft:'11vh'}}
             error
-             id="filled-error"
-             label="Email"
-             type={"Email"}
-             className="input"
-             placeholder={"enter Email-Id"}
-             name="Email"
-             onChange={getdata}
+            label="Email"
+            type={"email"}
+            placeholder={"enter email id"}
+            name="email"
+            onChange={getdata}
         />
            
           </Box>
@@ -111,13 +109,11 @@ const Login = () => {
             <TextField
              style={{marginLeft:'11vh'}}
              error
-              id="filled-error"
-              label="Password"
-              type={"password"}
-              className="input"
-              placeholder={"enter Password"}
-              name="password"
-              onChange={getdata}
+             label="Password"
+             type={"password"}
+             placeholder={"enter password"}
+             name="password"
+             onChange={getdata}
             ></TextField>
             <br/> <br/>
           </Box>

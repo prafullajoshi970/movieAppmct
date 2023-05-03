@@ -77,10 +77,10 @@ function CreateAccount() {
             error
              id="filled-error"
              label="Name"
-             type={"Email"}
+             type={"text"}
              className="input"
              placeholder={"enter Name"}
-             name="Email"
+             name="name"
              onChange={getdata}
         />
            
@@ -103,7 +103,7 @@ function CreateAccount() {
              type={"Email"}
              className="input"
              placeholder={"enter Email-Id"}
-             name="Email"
+             name="email"
              onChange={getdata}
         />
            
@@ -125,7 +125,7 @@ function CreateAccount() {
              type={"Email"}
              className="input"
              placeholder={"enter PassWord"}
-             name="Email"
+             name="password"
              onChange={getdata}
         />
            
